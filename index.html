@@ -1,260 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asim Ibrahim | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f172a;
-      color: #ffffff;
-      line-height: 1.6;
-      padding: 0 1rem;
-    }
-    section, footer {
-      background: #1e293b;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    section:hover, footer:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
-    }
-    nav {
-      background: #1e293b;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #3b82f6;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #60a5fa;
-      text-decoration: underline;
-    }
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-    h1 {
-  font-size: 2.5rem;
-  color: #38bdf8;
-  margin-bottom: 1rem;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asim Ibrahim | Robotics Engineer & Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    section, footer {
+      background: #1e293b;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover, footer:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
+    }
+    nav {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #60a5fa;
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+    h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
 }
 h2 {
-  font-size: 2rem;
-  color: #60a5fa;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 1rem;
 }
 h3 {
-  font-size: 1.5rem;
-  color: #3b82f6;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
 }
-    p, li {
-  color: #e2e8f0;
-  font-size: 1.05rem;
+    p, li {
+  color: #e2e8f0;
+  font-size: 1.05rem;
 }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li::before {
-      content: "\2022";
-      color: #3b82f6;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
-    }
-    .project {
-      background: #1e293b;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      width: 300px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
-    }
-    .project:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
-    }
-    .project-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .icon-uav { color: #facc15; }
-    .icon-crash { color: #ef4444; }
-    .icon-bottle { color: #3b82f6; }
-    .icon-nutrient { color: #22c55e; }
-    .icon-air { color: #38bdf8; }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "\2022";
+      color: #3b82f6;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .project {
+      background: #1e293b;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+    }
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    }
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .icon-arm { color: #22c55e; } /* New color for arm project */
+    .icon-uav { color: #facc15; }
+    .icon-crash { color: #ef4444; }
+    .icon-bottle { color: #3b82f6; }
+    /* Removed unused icons: .icon-nutrient, .icon-air */
 
-    .project p {
-      margin: 0.5rem 0;
-    }
-    .project .skills {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      margin-top: 0.5rem;
-    }
-    .contact-icons {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      text-align: center;
-    }
-    .contact-icons a {
-      margin: 0 0.5rem;
-      color: #3b82f6;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-    .contact-icons a:hover {
-      transform: scale(1.2);
-      color: #60a5fa;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-  </style>
+    .project p {
+      margin: 0.5rem 0;
+    }
+    .project .skills {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+    .contact-icons {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .contact-icons a {
+      margin: 0 0.5rem;
+      color: #3b82f6;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .contact-icons a:hover {
+      transform: scale(1.2);
+      color: #60a5fa;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+/* New style for detailed experience list */
+.experience-item {
+      margin-bottom: 1.5rem;
+      padding-left: 0.5rem;
+      border-left: 3px solid #3b82f6;
+    }
+.experience-item h3 {
+      margin-bottom: 0.25rem;
+    }
+.experience-item p {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-bottom: 0.75rem;
+    }
+.experience-item ul {
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#awards">Awards</a>
-  <a href="#contact">Contact</a>
+  <nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#awards">Awards</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-  <main>
-    <div style="text-align: center; margin-top: 2rem;">
-      <h1>Hi, I'm Asim <i class='fa-solid fa-hand-peace'></i></h1>
-      <p>Building cool things with code and circuits.</p>
-      <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/asimibrahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:asimmuaz111@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
+  <main>
+    <div style="text-align: center; margin-top: 2rem;">
+      <h1>Hi, I'm Asim Ibrahim <i class='fa-solid fa-robot'></i></h1>
+      <p>Robotics Junior Engineer | ROS2, Computer Vision, and Autonomous Systems Development.</p>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/asimibrahim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:asim.ibrahim.official@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Asim-Ibrahim" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a final-year Electronic Engineering student at Universiti Teknologi Malaysia, passionate about technology and driven to develop impactful solutions through embedded systems and IoT.</p>
-    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Robotics Junior Engineer with hands-on experience in autonomous systems, sensor integration (LiDAR/Vision), and robot motion planning[cite: 7]. 
+        I am passionate about leveraging $\text{AI}$ applications in robotics, focusing on machine learning, computer vision, and autonomous behavior development[cite: 8]. 
+        My expertise includes development and simulation using **ROS2**, **PX4**, and **YOLOv8**.
+      </p>
+    </section>
 
-  
+    <section id="education">
+      <h2>Education</h2>
+      <div class="experience-item">
+        <h3>Bachelor of Electrical and Electronic Engineering (Hons.) [cite: 47]</h3>
+        <p>Universiti Teknologi Malaysia (UTM) | Specialization in Computer Engineering [cite: 46, 48]</p>
+      </div>
+    </section>
 
 <section id="experience">
-  <h2>Experience</h2>
-  <p><strong>Field Application Intern</strong> – Sophic Automation Sdn Bhd (Jul–Oct 2024)</p>
-  <ul>
-    <li>Supported project implementation and customer solutions</li>
-    <li>Performed electrical wiring and mechanical assembly of industrial machines</li>
-  </ul>
+  <h2>Professional Experience</h2>
+
+  <div class="experience-item">
+    <h3>Robotics Engineer [cite: 11]</h3>
+    <p>Niche Frontiere Sdn Bhd | 08/2025 - Present | Perak, Malaysia [cite: 10, 12]</p>
+    <ul>
+      <li>Developed autonomous robotic arm simulation using ROS2 and LiDAR data for adaptive motion and obstacle avoidance[cite: 13].</li>
+      <li>Contributed to heavy-lift Hyper-UAV development, including mechanical/electrical systems integration and comprehensive testing[cite: 14].</li>
+      <li>Integrated a remote engine start feature into PX4-based UAV systems to enhance operator situational awareness and safety[cite: 15].</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h3>Field Application Specialist (Intern) [cite: 18]</h3>
+    <p>Sophic Automation Sdn Bhd | 07/2024-10/2024 | Penang, Malaysia [cite: 16, 17]</p>
+    <ul>
+      <li>Assembled mechanical frames and wired control systems for automated machines for clients like Qnnect and Western Digital[cite: 19, 20].</li>
+      <li>Assisted with sensor integration, inspections, and mechanical fault finding to maintain machine stability[cite: 21].</li>
+    </ul>
+  </div>
 </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <i class="fa-solid fa-robot project-icon icon-uav"></i>
-          <h3>AI UAV for Search & Rescue</h3>
-          <p>Drone with AI-powered human detection and waypoint navigation.</p>
-          <p class="skills">Skills: Python, YOLOv8, DroneKit, QGroundControl</p>
-        </div>
-        <div class="project">
-          <i class="fa-solid fa-car-burst project-icon icon-crash"></i>
-          <h3>Crash Alert Device</h3>
-          <p>IoT crash detection system using sensors and GSM/GPS.</p>
-          <p class="skills">Skills: ESP32, GPS, GSM, C</p>
-        </div>
-        <div class="project">
-          <i class="fa-solid fa-industry project-icon icon-bottle"></i>
-          <h3>Bottle-Filling Automation</h3>
-          <p>Smart system for fluid control and monitoring in bottling.</p>
-          <p class="skills">Skills: ESP32, Intel Galileo, I2C/SPI</p>
-        </div>
-        <div class="project">
-          <i class="fa-solid fa-leaf project-icon icon-nutrient"></i>
-          <h3>Nutrient Cycling Optimizer</h3>
-          <p>Environmental monitoring system for smart agriculture.</p>
-          <p class="skills">Skills: IoT, Sensors, Embedded C</p>
-        </div>
-        <div class="project">
-          <i class="fa-solid fa-wind project-icon icon-air"></i>
-          <h3>Air Quality Monitor</h3>
-          <p>Real-time pollutant tracking using cloud dashboard.</p>
-          <p class="skills">Skills: ESP32, Arduino Cloud, MQ135, DHT11</p>
-        </div>
-      </div>
-    </section>
+    <section id="projects">
+      <h2>Key Projects</h2>
+      <div class="project-grid">
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming & Tools: Python, C, Linux, Git, VS Code, MATLAB, YOLOv8, OpenCV, Image Processing </li>
-        <li>Embedded Systems: ESP32, Arduino, Raspberry Pi, Intel Galileo, IoT Integration</li>
-        <li>Robotics & Simulation: ROS2, MoveIt2, Gazebo, RViz, Pixhawk, MAVLink, QGroundControl, DroneKit-Python</li>
-        <li>Design & Productivity: Autodesk Fusion 360, Microsoft Office , LaTeX</li>
-        <li>Protocols: SPI, I2C, UART</li>
-      </ul>
-    </section>
+        <div class="project">
+          <i class="fa-solid fa-robot project-icon icon-arm"></i>
+          <h3>Autonomous Robotic Arm for Cleaning [cite: 24]</h3>
+          <p>ROS2-based simulation demonstrating obstacle-aware path planning and adaptive behavior[cite: 27, 28].</p>
+          <p class="skills">Skills: ROS2, MoveIt2, LiDAR, Gazebo, Python, C++ [cite: 26]</p>
+        </div>
 
-    
+        <div class="project">
+          <i class="fa-solid fa-plane-departure project-icon icon-uav"></i>
+          <h3>AI UAV for Search & Rescue [cite: 29]</h3>
+          <p>AI-driven UAV using YOLOv8 for human detection and real-time behavioral modulation via MAVLink[cite: 32, 33].</p>
+          <p class="skills">Skills: YOLOv8, MAVLink, QGroundControl, Raspberry Pi, Pixhawk [cite: 31]</p>
+        </div>
+        
+        <div class="project">
+          <i class="fa-solid fa-car-burst project-icon icon-crash"></i>
+          <h3>Crash Alert Device [cite: 35]</h3>
+          <p>IoT device to detect high-impact motion and notify contacts; reduced false triggers by over 80%[cite: 38, 39].</p>
+          <p class="skills">Skills: ESP32, MPU6050, SIM800L GSM, GPS NEO-6M [cite: 37]</p>
+        </div>
 
-    <section id="awards">
-      <h2>Awards</h2>
-      <ul>
-        <li>Power Them Award – EECS2025 Capstone Competition</li>
-        <li>3rd Place – AI & IoT Gesture Control Robot Challenge</li>
-      </ul>
-    </section>
+        <div class="project">
+          <i class="fa-solid fa-industry project-icon icon-bottle"></i>
+          <h3>Bottle-Filling Automation System [cite: 40]</h3>
+          <p>Automated fluid dispensing system with IoT monitoring and cloud-based logging for remote control[cite: 42, 44].</p>
+          <p class="skills">Skills: Intel Galileo, ESP32, HX711, Ultrasonic Sensors, Blynk [cite: 41]</p>
+        </div>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out via email or LinkedIn!</p>
-      <div class="contact-icons">
-        <a href="mailto:asimmuaz111@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/asimibrahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </section>
-      <div style="text-align: center; margin-top: 2rem;">
-      <a href="#about" style="display: inline-block; color: #3b82f6; font-size: 2rem; text-decoration: none; transition: transform 0.3s ease;">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </div>
-  </main>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Asim Ibrahim. All rights reserved.</p>
-  </footer>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>**Robotics & Simulation:** ROS2 [cite: 72], MoveIt2 [cite: 72], Gazebo [cite: 72], RViz, Pixhawk [cite: 72], MAVLink, QGroundControl [cite: 72], Mission Planner, DroneKit-Python [cite: 72]</li>
+        <li>**Programming & Tools:** Python [cite: 61], C [cite: 61], Linux, Git [cite: 61], VS Code, MATLAB, OpenCV [cite: 61], Open3D [cite: 61]</li>
+        <li>**Machine Learning/Perception:** Neural Networks [cite: 64], YOLO [cite: 64], Image Processing [cite: 64], PointCloud [cite: 64]</li>
+        <li>**Embedded Systems:** PX4 [cite: 63], ESP32 [cite: 63], Arduino [cite: 63], Raspberry Pi [cite: 63], Intel Galileo [cite: 63], Jetson Nano, LiDAR [cite: 63], Depth Cameras [cite: 63]</li>
+        <li>**Design & Productivity:** Autodesk Fusion 360 [cite: 65], Microsoft Office [cite: 65], $\text{LaTeX}$ [cite: 65]</li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Publications</h2>
+      <ul>
+        <li>Publication of IEEE Conference Paper [cite: 51] - The International Biomedical Instrumentation and Technology Conference [cite: 52]</li>
+        <li>Power Them Award [cite: 53] – Electrical Engineering Capstone Competition (2025) [cite: 54]</li>
+        <li>3rd Place [cite: 55] – Gesture-Controlled AI & IoT Robot Competition [cite: 56]</li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out via email or LinkedIn! I am currently based in Doha[cite: 5].</p>
+      <div class="contact-icons">
+        <a href="mailto:asim.ibrahim.official@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/asimibrahim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Asim-Ibrahim" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+      <div style="text-align: center; margin-top: 2rem;">
+      <a href="#about" style="display: inline-block; color: #3b82f6; font-size: 2rem; text-decoration: none; transition: transform 0.3s ease;">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Asim Ibrahim. All rights reserved.</p>
+  </footer>
 </body>
 </html>
